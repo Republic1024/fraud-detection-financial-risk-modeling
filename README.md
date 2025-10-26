@@ -1,6 +1,6 @@
 
 # 🧠 Fraud Detection and Financial Risk Modeling
-**End-to-end fraud detection system for transactional data (13M+ records) integrating EDA, feature engineering, LightGBM modeling, and SHAP interpretability.**
+**End-to-end fraud detection and financial risk modeling system (13M+ transactions) integrating EDA, feature engineering, LightGBM optimization, and explainable AI for business risk auditing.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)]()
 [![LightGBM](https://img.shields.io/badge/LightGBM-4.x-green.svg)]()
@@ -38,20 +38,21 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 | **Threshold Tuning** | Optimized precision–recall trade-off with decision curve visualization. |
 | **Business Application** | Exported Top-200 high-risk transactions for manual verification. |
 
----
-
 ## 📊 Model Performance
-| Metric | Value |
-|:--|--:|
-| **AUC (Validation)** | 0.9718 |
-| **Precision** | 0.0379 |
-| **Recall** | 0.4941 |
-| **F1 Score** | 0.0704 |
-| **Detection Coverage** | 2.28% of transactions flagged as high risk |
+
+### Before & After Threshold Optimization
+
+| Metric                 | Default Threshold (0.5) | Tuned Threshold (0.1598) |          Δ Improvement |
+| :--------------------- | ----------------------: | -----------------------: | ---------------------: |
+| **AUC (Validation)**   |                  0.9718 |                   0.9718 |                      — |
+| **Precision**          |                  0.0374 |                   0.0379 |                +0.0005 |
+| **Recall**             |                  0.1601 |               **0.4941** |            **+0.3340** |
+| **F1 Score**           |                  0.0606 |               **0.0704** |                +0.0098 |
+| **Detection Coverage** |                   0.74% |                **2.28%** | ↑ Expanded audit scope |
 
 **Interpretation:**  
-- The model correctly detects ~49.4% of all fraud cases with only 2.28% alerts —  
-  efficient enough for business audit workflows with limited human verification capacity.
+- After tuning the decision threshold, Recall improved from **16.0% → 49.4%**, tripling fraud coverage while maintaining similar precision (~0.04).  
+- The optimized configuration balances model confidence and operational feasibility — ideal for financial audit pipelines where human verification capacity is limited.
 
 ---
 
@@ -83,20 +84,14 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 
 ## 💡 Business Impact
 This project demonstrates a **scalable, interpretable fraud detection framework** ready for integration into financial risk control systems.  
-By combining model precision with SHAP-based transparency, it allows compliance teams to **prioritize high-value alerts** and **rationalize AI decisions** to stakeholders.
 
 ---
 
 ## 📈 Author
-**Yao Wu** (GitHub: [Republic1024](https://github.com/Republic1024))  
-Westlake University · Research Assistant (AI & Data Science)  
-📚 Projects: [HierCVAE](https://doi.org/10.48550/arXiv.2508.18922), [J6 Framework](https://github.com/Republic1024/J6-Prompt-Optimization)
+**Yao Wu** (GitHub: [Republic1024](https://github.com/Republic1024))   (AI & Data Science)  
 
 ---
 
 ## 🪪 License
 This project is released under the [MIT License](LICENSE).
-
----
-```
 
