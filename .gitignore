@@ -29,5 +29,4 @@ artifacts/
 *.csv
 !high_risk_transactions_top200.csv
 *.json
-!mcc_codes.json
-!train_fraud_labels.json
+
