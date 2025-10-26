@@ -88,10 +88,10 @@ This project demonstrates a **scalable, interpretable fraud detection framework*
 ---
 
 ## 📈 Author
-**Yao Wu** (GitHub: [Republic1024](https://github.com/Republic1024))   (AI & Data Science)  
+**Republic** (GitHub: [Republic1024](https://github.com/Republic1024))   (AI & Data Science)  
 
 ---
 
-## 🪪 License
+## License
 This project is released under the [MIT License](LICENSE).
 
