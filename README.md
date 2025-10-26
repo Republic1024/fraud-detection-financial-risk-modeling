@@ -56,12 +56,27 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 
 ---
 
+## 🗂️ Dataset Description
+
+##### **[Kaggle: Financial Transactions EDA](https://www.kaggle.com/code/mariemwaleed178/financial-transactions-eda)**
+
+This comprehensive financial dataset originates from a banking institution and spans across the 2010s decade.  
+It combines transaction logs, customer profiles, and card information — designed for analytical tasks such as fraud detection, customer behavior modeling, and expense forecasting.
+
+### Dataset Components
+| File                        | Description                                                  | Purpose                                                |
+| --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ |
+| **transactions_data.csv**   | Detailed transaction records with timestamps, merchant IDs, and amounts. | Core input for fraud detection and trend analysis.     |
+| **cards_data.csv**          | Credit/debit card metadata including card type, limits, and activation dates. | Links customer financial activity across accounts.     |
+| **users_data.csv**          | Customer demographic and account-level data.                 | Enables segmentation and personalized analytics.       |
+| **mcc_codes.json**          | Standardized merchant category codes (MCC).                  | Classifies business types for industry-level analysis. |
+| **train_fraud_labels.json** | Binary labels indicating legitimate vs. fraudulent transactions. | Supervised training and evaluation.                    |
+
 ## 🌍 Explainability
+
 - **Global Importance:** `amount_log`, `hour`, `mcc_desc`, and `client_mean` drive fraud prediction.  
 - **Local Explanation:** SHAP force plots reveal how transaction timing and amount deviations trigger risk alerts.  
 - **Interpretability Goal:** bridge **model confidence** and **financial analyst reasoning**.
-
----
 
 ## 📦 Exported Deliverables
 | Output File | Description |
@@ -71,8 +86,6 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 | `high_risk_transactions_top200.csv` | Top 200 suspicious transactions ranked by fraud probability |
 | `.gitignore` | Excludes large data files (JSON/CSV over 100 MB) |
 
----
-
 ## 🧰 Tech Stack
 - **Python 3.10 + Pandas + NumPy**
 - **LightGBM 4.3.0** (with callbacks for early stopping & AUC logging)
@@ -80,17 +93,14 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 - **SHAP 0.43.0** (explainable AI)
 - **Scikit-learn 1.4+** (precision-recall & threshold tuning)
 
----
 
 ## 💡 Business Impact
 This project demonstrates a scalable, interpretable fraud detection framework ready for integration into financial risk control systems, enabling **data-driven decision intelligence for early fraud prevention and compliance assurance.**
 
----
 
 ## 📈 Author
 **Republic** (GitHub: [Republic1024](https://github.com/Republic1024))   (AI & Data Science)  
 
----
 
 ## License
 This project is released under the [MIT License](LICENSE).
