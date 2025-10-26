@@ -1,5 +1,5 @@
 
-# 🧠 Fraud Detection and Financial Risk Modeling
+# Fraud Detection and Financial Risk Modeling
 **End-to-end fraud detection and financial risk modeling system (13M+ transactions) integrating EDA, feature engineering, LightGBM optimization, and explainable AI for business risk auditing.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)]()
