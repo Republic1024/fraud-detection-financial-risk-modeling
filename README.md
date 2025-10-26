@@ -75,7 +75,7 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 
 ## 🧰 Tech Stack
 - **Python 3.10 + Pandas + NumPy**
-- **LightGBM 4.x** (with callbacks for early stopping & AUC logging)
+- **LightGBM 4.3.0** (with callbacks for early stopping & AUC logging)
 - **Matplotlib / Seaborn** (visual analytics)
 - **SHAP 0.43.0** (explainable AI)
 - **Scikit-learn 1.4+** (precision-recall & threshold tuning)
