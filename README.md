@@ -58,7 +58,7 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 
 ## 🗂️ Dataset Description
 
-##### **[Kaggle: Financial Transactions EDA](https://www.kaggle.com/code/mariemwaleed178/financial-transactions-eda)**
+### **[Kaggle: Financial Transactions EDA](https://www.kaggle.com/code/mariemwaleed178/financial-transactions-eda)**
 
 This comprehensive financial dataset originates from a banking institution and spans across the 2010s decade.  
 It combines transaction logs, customer profiles, and card information — designed for analytical tasks such as fraud detection, customer behavior modeling, and expense forecasting.
