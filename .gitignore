@@ -1,0 +1,33 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Data artifacts
+artifacts/
+*.pkl
+*.model
+*.npy
+*.npz
+
+# Large CSV/JSON exports (optional)
+*.csv
+!high_risk_transactions_top200.csv
+*.json
+!mcc_codes.json
+!train_fraud_labels.json
