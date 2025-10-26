@@ -83,7 +83,7 @@ LightGBM Training → Threshold Optimization → SHAP Interpretability → Risk 
 ---
 
 ## 💡 Business Impact
-This project demonstrates a **scalable, interpretable fraud detection framework** ready for integration into financial risk control systems.  
+This project demonstrates a scalable, interpretable fraud detection framework ready for integration into financial risk control systems, enabling **data-driven decision intelligence for early fraud prevention and compliance assurance.**
 
 ---
 
